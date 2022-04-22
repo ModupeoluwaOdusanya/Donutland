@@ -275,6 +275,9 @@ transform: translate(0);
 .combo-container h4{
     color: rgb(251, 39, 39);
 }
+.combo-img{
+    padding:1rem;
+} 
 .combo-container a{
     margin-bottom: 3rem;
 }
@@ -287,6 +290,27 @@ transform: translate(0);
 .combo-btn{
     outline: 0.125rem solid #ff218c;
     outline-offset: 0.225rem;
+}
+
+@media screen and (min-width:600px){
+    
+    .combo-cards-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .combo-img{
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        max-width: 13rem;
+        margin:10px;
+        border-radius: 5%;
+        padding:unset;
+        } 
+        .combo-icon{
+        font-size:1.5rem;
+        margin-top: 10%;
+        }
 }
 
 @media screen and (min-width:992px){
@@ -450,6 +474,7 @@ transform: translate(0);
 .footer{
     background: var(--clr-yellow);
     text-align: center;
+   width: 100vw;
 }
 .footer-icon{
     color: var(--clr-grey-1);
